@@ -48,17 +48,16 @@ public class SnakeCamelUtil {
 		String rest = s.substring(1);
 		return lowerFirst + rest;
 	}
+	
 	public static void main(String[] args) {
 		String lowa = "a";
 		String upa = "A";
 		String lowx = "xyz";
 		String upx = "Xyz";
-		
 		String upToLowa = uncapitalize(upa);
 		String lowToUpa = capitalize(lowa);
 		String upToLowx = uncapitalize(upx);
-		String lowToUpx = capitalize(lowx);
-		
+		String lowToUpx = capitalize(lowx);		
 		String lowSnakea = "abc";
 		String lowSnakeb = "abc_def";
 		String lowSnakec = "abc_def_gh";
@@ -71,33 +70,22 @@ public class SnakeCamelUtil {
 		String snaToCamb = snakeToCamelcase(lowSnakeb);
 		String snaToCamc = snakeToCamelcase(lowSnakec);
 		String snaToCamd = snakeToCamelcase(lowSnaked);
-		String snaToCame = snakeToCamelcase(lowSnakee);
-		
+		String snaToCame = snakeToCamelcase(lowSnakee);		
 		String camToSnaa = camelToSnakecase(upCamela);
 		String camToSnab = camelToSnakecase(upCamelb);
-		String camToSnac = camelToSnakecase(upCamelc);
-
-		
+		String camToSnac = camelToSnakecase(upCamelc);		
 		System.out.println("uncapitalizea="+upToLowa);
 		System.out.println("capitalizea="+lowToUpa);		
 		System.out.println("uncapitalizexyz="+upToLowx);
 		System.out.println("capitalizexyz="+lowToUpx);
-		
-		
 		System.out.println("snakeToCamelcase="+snaToCama);		
 		System.out.println("snakeToCamelcase="+snaToCamb);		
 		System.out.println("snakeToCamelcase="+snaToCamc);		
 		System.out.println("snakeToCamelcase="+snaToCamd);		
 		System.out.println("snakeToCamelcase="+snaToCame);
-
-		
 		System.out.println("camelToSnakecase="+camToSnaa);
 		System.out.println("camelToSnakecase="+camToSnab);
 		System.out.println("camelToSnakecase="+camToSnac);
-
-		
-
-		
 		
 	}
 	
